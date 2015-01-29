@@ -1,0 +1,20 @@
+name = Radix Bartlett
+version = BACKDROP_VERSION
+backdrop = 1.x
+
+; Specify regions for this layout.
+regions[header] = Header
+regions[sidebar] = Sidebar
+regions[contentheader] = Content Header
+regions[contentcolumn1] = Content Column 1
+regions[contentcolumn2] = Content Column 2
+regions[footer] = Footer
+
+; Preview
+preview = radix-bartlett.png
+
+; Content is the default region by default, but specify it for clarity.
+default region = contentcolumn1
+
+; Default stylesheets
+stylesheets[all][] = ../css/radix_layouts.css
