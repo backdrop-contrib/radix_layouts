@@ -40,37 +40,32 @@
     <?php endif; ?>
 
     <?php print $action_links; ?>
-
     <div class="row">
       <div class="col-md-8 panel-panel">
         <div class="row">
           <div class="col-md-12 radix-layouts-contentheader">
             <?php print $content['contentheader']; ?>
           </div>
-        </div>
-        <div class="row">
           <div class="col-md-6 radix-layouts-contentcolumn1">
-            <?php print $content['column1']; ?>
+            <?php print $content['contentcolumn1']; ?>
           </div>
           <div class="col-md-6 radix-layouts-contentcolumn2">
             <?php print $content['contentcolumn2']; ?>
           </div>
         </div>
       </div>
-
-      <!-- Sidebar -->
-      <aside class="col-md-4 radix-layouts-sidebar panel-panel">
-        <?php print $content['sidebar']; ?>
-      </aside>
     </div>
-</div>
-</main>
+    <!-- Sidebar -->
+    <aside class="col-md-4 radix-layouts-sidebar panel-panel">
+      <?php print $content['sidebar']; ?>
+    </aside>
+  </main>
 
-<?php if ($content['footer']): ?>
-  <footer id="footer" class="footer" role="footer">
-    <div class="container">
-      <?php print $content['footer']; ?>
-    </div>
-  </footer>
-<?php endif; ?>
+  <?php if ($content['footer']): ?>
+    <footer id="footer" class="footer" role="footer">
+      <div class="container">
+        <?php print $content['footer']; ?>
+      </div>
+    </footer>
+  <?php endif; ?>
 </div><!-- /.bartlett -->
