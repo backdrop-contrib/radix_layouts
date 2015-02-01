@@ -51,7 +51,7 @@
           <div class="col-md-12 radix-layouts-contentheader">
             <?php print $content['contentheader']; ?>
           </div>
-          <daiv class="col-md-6 radix-layouts-contentcolumn1">
+          <div class="col-md-6 radix-layouts-contentcolumn1">
             <?php print $content['contentcolumn1']; ?>
           </div>
           <div class="col-md-6 radix-layouts-contentcolumn2">
