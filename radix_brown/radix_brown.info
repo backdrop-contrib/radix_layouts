@@ -1,0 +1,24 @@
+name = Radix Brown
+version = BACKDROP_VERSION
+backdrop = 1.x
+
+; Specify regions for this layout.
+regions[header] = Header
+regions[slider] = Slider
+regions[slidergutter] = Slider Gutter
+regions[column1] = First Column
+regions[column2] = Second Column
+regions[column3] = Third Column
+regions[footercolumn1] = Footer First Column
+regions[footercolumn2] = Footer Second Column
+regions[footercolumn3] = Footer Third Column
+regions[footer] = Footer
+
+; Default region.
+default region = ''
+
+; Preview
+preview = radix-brown.png
+
+; Default stylesheets
+stylesheets[all][] = ../css/radix_layouts.css

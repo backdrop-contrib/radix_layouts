@@ -1,10 +1,10 @@
 <?php
 /**
  * @file
- * Template for Radix Bartlett.
+ * Template for Radix Brenham Flipped.
  */
 ?>
-<div class="radix-bartlett <?php print implode(' ', $classes); ?>"<?php print backdrop_attributes($attributes); ?>>
+<div class="radix-brenham-flipped <?php print implode(' ', $classes); ?>"<?php print backdrop_attributes($attributes); ?>>
   <?php if (!empty($content['header'])): ?>
     <?php print $content['header']; ?>
   <?php endif; ?>
@@ -35,23 +35,17 @@
 
     <?php print $action_links; ?>
     <div class="row">
-      <!-- Sidebar -->
-      <aside class="col-md-4 radix-layouts-sidebar">
-        <?php print $content['sidebar']; ?>
-      </aside>
+      <div class="col-md-12 radix-layouts-top panel-panel">
+        <?php print $content['top']; ?>
+      </div>
+    </div>
 
-      <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-12 radix-layouts-contentheader">
-            <?php print $content['contentheader']; ?>
-          </div>
-          <div class="col-md-6 radix-layouts-contentcolumn1">
-            <?php print $content['contentcolumn1']; ?>
-          </div>
-          <div class="col-md-6 radix-layouts-contentcolumn2">
-            <?php print $content['contentcolumn2']; ?>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-md-9 radix-layouts-content panel-panel">
+        <?php print $content['content']; ?>
+      </div>
+      <div class="col-md-3 radix-layouts-sidebar panel-panel">
+        <?php print $content['sidebar']; ?>
       </div>
     </div>
   </main>
@@ -63,4 +57,4 @@
       </div>
     </footer>
   <?php endif; ?>
-</div><!-- /.radix-bartlett -->
+</div><!-- /.radix-brenham-flipped -->

@@ -1,16 +1,10 @@
 <?php
 /**
  * @file
- * Template for Radix Bartlett.
- *
- * Variables:
- * - $css_id: An optional CSS id to use for the layout.
- * - $content: An array of content, each item in the array is keyed to one
- * panel of the layout. This layout supports the following sections:
+ * Template for Radix Bartlett Flipped.
  */
 ?>
-
-<div class="radix-bartlett <?php print implode(' ', $classes); ?>"<?php print backdrop_attributes($attributes); ?>>
+<div class="radix-bartlett-flipped <?php print implode(' ', $classes); ?>"<?php print backdrop_attributes($attributes); ?>>
   <?php if (!empty($content['header'])): ?>
     <?php print $content['header']; ?>
   <?php endif; ?>
@@ -54,11 +48,12 @@
           </div>
         </div>
       </div>
+
+      <!-- Sidebar -->
+      <aside class="col-md-4 radix-layouts-sidebar panel-panel">
+        <?php print $content['sidebar']; ?>
+      </aside>
     </div>
-    <!-- Sidebar -->
-    <aside class="col-md-4 radix-layouts-sidebar panel-panel">
-      <?php print $content['sidebar']; ?>
-    </aside>
   </main>
 
   <?php if ($content['footer']): ?>
@@ -68,4 +63,4 @@
       </div>
     </footer>
   <?php endif; ?>
-</div><!-- /.bartlett -->
+</div><!-- /.bartlett-flipped -->
