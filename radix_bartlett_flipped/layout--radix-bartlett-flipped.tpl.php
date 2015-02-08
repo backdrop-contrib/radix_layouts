@@ -63,4 +63,4 @@
       </div>
     </footer>
   <?php endif; ?>
-</div><!-- /.bartlett-flipped -->
+</div><!-- /.radix-bartlett-flipped -->
