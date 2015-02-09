@@ -20,3 +20,15 @@ A set of 31 responsive layouts for Backdrop CMS.
 
 1. To make your layout fluid, follow the steps above to override the layout.
 2. Remove the ```container``` class from main
+
+## Radix Layouts for Drupal
+
+http://drupal.org/project/radix_layouts
+
+## License
+
+This project is GPL v2 software. See the LICENSE.txt file in this directory for complete text.
+
+## Current Maintainers
+
+* Arshad Chummun (http://github.com/arshad)
