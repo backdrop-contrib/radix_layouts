@@ -35,57 +35,41 @@
 
     <?php print $action_links; ?>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-8 radix-layouts-slider panel-panel">
-          <div class="panel-panel-inner">
-            <?php print $content['slider']; ?>
-          </div>
+          <?php print $content['slider']; ?>
         </div>
         <div class="col-md-4 radix-layouts-slidergutter panel-panel">
-          <div class="panel-panel-inner">
-            <?php print $content['slidergutter']; ?>
-          </div>
+          <?php print $content['slidergutter']; ?>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 radix-layouts-column1 panel-panel">
-          <div class="panel-panel-inner">
-            <?php print $content['column1']; ?>
-          </div>
+          <?php print $content['column1']; ?>
         </div>
         <div class="col-md-4 radix-layouts-column2 panel-panel">
-          <div class="panel-panel-inner">
-            <?php print $content['column2']; ?>
-          </div>
+          <?php print $content['column2']; ?>
         </div>
         <div class="col-md-4 radix-layouts-column3 panel-panel">
-          <div class="panel-panel-inner">
-            <?php print $content['column3']; ?>
-          </div>
+          <?php print $content['column3']; ?>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 radix-layouts-footercolumn1 panel-panel">
-          <div class="panel-panel-inner">
-            <?php print $content['footercolumn1']; ?>
-          </div>
+          <?php print $content['footercolumn1']; ?>
         </div>
         <div class="col-md-4 radix-layouts-footercolumn2 panel-panel">
-          <div class="panel-panel-inner">
-            <?php print $content['footercolumn2']; ?>
-          </div>
+          <?php print $content['footercolumn2']; ?>
         </div>
         <div class="col-md-4 radix-layouts-footercolumn3 panel-panel">
-          <div class="panel-panel-inner">
-            <?php print $content['footercolumn3']; ?>
-          </div>
+          <?php print $content['footercolumn3']; ?>
         </div>
       </div>
     </div>
