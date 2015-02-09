@@ -6,7 +6,11 @@
 ?>
 <div class="radix-brenham-flipped <?php print implode(' ', $classes); ?>"<?php print backdrop_attributes($attributes); ?>>
   <?php if (!empty($content['header'])): ?>
-    <?php print $content['header']; ?>
+    <header id="header" class="header" role="header">
+      <div class="container">
+        <?php print $content['header']; ?>
+      </div>
+    </header>
   <?php endif; ?>
 
   <?php if ($messages): ?>
@@ -34,18 +38,20 @@
     <?php endif; ?>
 
     <?php print $action_links; ?>
-    <div class="row">
-      <div class="col-md-12 radix-layouts-top panel-panel">
-        <?php print $content['top']; ?>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 radix-layouts-top panel-panel">
+          <?php print $content['top']; ?>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-9 radix-layouts-content panel-panel">
-        <?php print $content['content']; ?>
-      </div>
-      <div class="col-md-3 radix-layouts-sidebar panel-panel">
-        <?php print $content['sidebar']; ?>
+      <div class="row">
+        <div class="col-md-9 radix-layouts-content panel-panel">
+          <?php print $content['content']; ?>
+        </div>
+        <div class="col-md-3 radix-layouts-sidebar panel-panel">
+          <?php print $content['sidebar']; ?>
+        </div>
       </div>
     </div>
   </main>

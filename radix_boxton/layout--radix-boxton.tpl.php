@@ -6,7 +6,11 @@
 ?>
 <div class="radix-boxton <?php print implode(' ', $classes); ?>"<?php print backdrop_attributes($attributes); ?>>
   <?php if (!empty($content['header'])): ?>
-    <?php print $content['header']; ?>
+    <header id="header" class="header" role="header">
+      <div class="container">
+        <?php print $content['header']; ?>
+      </div>
+    </header>
   <?php endif; ?>
 
   <?php if ($messages): ?>
@@ -34,9 +38,11 @@
     <?php endif; ?>
 
     <?php print $action_links; ?>
-    <div class="row">
-      <div class="col-md-12 radix-layouts-contentmain">
-        <?php print $content['content']; ?>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 radix-layouts-contentmain">
+          <?php print $content['content']; ?>
+        </div>
       </div>
     </div>
   </main>

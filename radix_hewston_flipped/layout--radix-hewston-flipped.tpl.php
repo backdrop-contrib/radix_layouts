@@ -6,7 +6,11 @@
 ?>
 <div class="radix-hewston-flipped <?php print implode(' ', $classes); ?>"<?php print backdrop_attributes($attributes); ?>>
   <?php if (!empty($content['header'])): ?>
-    <?php print $content['header']; ?>
+    <header id="header" class="header" role="header">
+      <div class="container">
+        <?php print $content['header']; ?>
+      </div>
+    </header>
   <?php endif; ?>
 
   <?php if ($messages): ?>
