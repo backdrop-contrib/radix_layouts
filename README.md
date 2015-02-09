@@ -10,6 +10,11 @@ A set of 31 responsive layouts for Backdrop CMS.
 * Works with any Backdrop theme.
 * Easily extendable to support new layouts and new regions.
 
+## Installation
+
+1. Download or clone this repository.
+2. Extract to */layouts* such that this README.md file is at */layouts/radix_layouts/README.md*.
+
 ## How to override layouts
 
 1. To override layouts in your theme, copy the layout template (*layout-NAME.tpl.php*) from the */layouts/radix-layouts* directory and place it in your theme templates directory.
