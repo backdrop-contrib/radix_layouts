@@ -31,4 +31,4 @@ This project is GPL v2 software. See the LICENSE.txt file in this directory for 
 
 ## Current Maintainers
 
-* Arshad Chummun (http://github.com/arshad)
+* [Arshad Chummun](http://github.com/arshad)
