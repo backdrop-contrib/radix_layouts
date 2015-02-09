@@ -1,10 +1,10 @@
 <?php
 /**
  * @file
- * Template for Radix Harris.
+ * Template for Radix McCoppin.
  */
 ?>
-<div class="radix-harris <?php print implode(' ', $classes); ?>"<?php print backdrop_attributes($attributes); ?>>
+<div class="radix-mccoppin <?php print implode(' ', $classes); ?>"<?php print backdrop_attributes($attributes); ?>>
   <?php if (!empty($content['header'])): ?>
     <?php print $content['header']; ?>
   <?php endif; ?>
@@ -36,23 +36,15 @@
     <?php print $action_links; ?>
 
     <div class="container-fluid">
-      <?php if (!empty($content['top'])): ?>
-        <div class="row">
-          <div class="col-md-12 radix-layouts-header panel-panel">
-            <?php print $content['top']; ?>
-          </div>
-        </div>
-      <?php endif; ?>
-
       <div class="row">
-        <div class="col-md-3 radix-layouts-column1 panel-panel">
+        <div class="col-md-4 radix-layouts-column1 panel-panel">
           <?php print $content['column1']; ?>
         </div>
-        <div class="col-md-6 radix-layouts-content panel-panel">
-          <?php print $content['content']; ?>
-        </div>
-        <div class="col-md-3 radix-layouts-column2 panel-panel">
+        <div class="col-md-4 radix-layouts-column2 panel-panel">
           <?php print $content['column2']; ?>
+        </div>
+        <div class="col-md-4 radix-layouts-column3 panel-panel">
+          <?php print $content['column3']; ?>
         </div>
       </div>
     </div>
@@ -65,4 +57,4 @@
       </div>
     </footer>
   <?php endif; ?>
-</div><!-- /.harris -->
+</div><!-- /.radix-mccoppin -->
