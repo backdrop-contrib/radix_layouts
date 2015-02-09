@@ -16,6 +16,33 @@ A set of 31 responsive layouts for Backdrop CMS.
 2. Make your changes and save.
 3. Clear the cache to see your changes.
 
+## How to add new regions
+
+Using *radix_burr* as an example:
+
+1. Copy the layout directory (e.g. *radix_burr*) from */layouts/radix-layouts* and place it under */layout*.
+2. Rename *radix_burr* with the name of your layout, *custom_layout*.
+3. Rename *radix_burr.info* and *radix-burr.png* to *custom_layout.info* and *custom-layout.png* respectively.
+4. Rename *layout--radix-burr.tpl.php* to *layout--layout-name.tpl.php*.
+5. Edit *custom_layout.info* and add your region:
+
+```
+; Specify regions for this layout.
+regions[header] = Header
+regions[sidebar] = Sidebar
+regions[custom_region] = Custom Region
+regions[content] = Content
+regions[footer] = Footer
+```
+
+6. Edit *layout-your-layout-name.tpl.php* and add your region as follows:
+
+```
+<?php if (!empty($content['custom_region'])): ?>
+  <?php print $content['custom_region']; ?>
+<?php endif; ?>
+```
+
 ## Fluid layout
 
 1. To make your layout fluid, follow the steps above to override the layout.
