@@ -1,4 +1,4 @@
-name = Radix Sanderson
+name = Radix Sanderson Flipped
 version = BACKDROP_VERSION
 backdrop = 1.x
 
@@ -15,7 +15,7 @@ regions[footer]           = Footer
 default region = ''
 
 ; Preview
-preview = radix-sanderson.png
+preview = radix-sanderson-flipped.png
 
 ; Default stylesheets
 stylesheets[all][] = ../css/radix_layouts.css

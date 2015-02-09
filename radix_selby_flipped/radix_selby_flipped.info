@@ -1,0 +1,21 @@
+name = Radix Selby Flipped
+version = BACKDROP_VERSION
+backdrop = 1.x
+
+; Specify regions for this layout.
+regions[header] = Header
+regions[sidebar] = Sidebar
+regions[top] = Top
+regions[contentcolumn1] = Content Column 1
+regions[contentcolumn2] = Content Column 2
+regions[bottom] = Bottom
+regions[footer] = Footer
+
+; Default region.
+default region = ''
+
+; Preview
+preview = radix-selby-flipped.png
+
+; Default stylesheets
+stylesheets[all][] = ../css/radix_layouts.css
