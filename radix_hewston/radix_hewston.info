@@ -1,0 +1,21 @@
+name = Radix Hewston
+version = BACKDROP_VERSION
+backdrop = 1.x
+
+; Specify regions for this layout.
+regions[header]        = Header
+regions[slider]        = Slider
+regions[slidergutter]  = Slider Gutter
+regions[column1]       = First Column
+regions[column2]       = Second Column
+regions[column3]       = Third Column
+regions[footer]        = Footer
+
+; Default region.
+default region = ''
+
+; Preview
+preview = radix-hewston.png
+
+; Default stylesheets
+stylesheets[all][] = ../css/radix_layouts.css
